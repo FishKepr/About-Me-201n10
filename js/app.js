@@ -1,4 +1,5 @@
 'use strict';
+//  This JavaScript asks a series of questions about me.
 
 var answersWrong = 0;
 
@@ -10,50 +11,87 @@ alert('Hello there ' + user + '. It\s nice to meet you.');
 //Warn the user about the questions
 alert(user + '. Let’s see if you can guess a few things about me.  Is that OK?  If not, too bad. we’re going to do it anyway.');
 
-//Question 1
+//Question 1:  Children
 var userIsRight = false;
 while (userIsRight == false) {
-        var answer = prompt(user + ", Do you think I have any children?  Enter a number from 0 to 5:");
-        console.log('The user thinks I have ' + answer + ' children'); 
-        if (answer == 1) {
-            alert(user + '. That is right!  I have one child');
-        } else {
-            if (answer > 5) {
-                alert(user + '. I\'m not a golden retreiver.  Try again.');
-                answersWrong++
-            } else {
-                alert(user + '. That is not correct!  Sorry, try again.');
-                answersWrong++
-            }
-        }
+    var answer = prompt(user + ", Do you think I have any children?    Enter Yes or No (Y or N is OK too):").toUpperCase();
+    if (answer == 'YES' || answer == 'Y') {
+        console.log('The user answered that I have a child.'); 
+        alert(user + '. That is right!  I have one child');
+        userIsRight = true;
+    } else {
+        console.log('The user answered that I do NOT have a child. Total Wrong: ' + answersWrong);  
+        alert(user + '. That is not correct!  Sorry, try again.');
+        answersWrong++
+   }
 }
 
-//Question 1
-var userIsRight = false;
+//Question 2:  pets
+userIsRight = false;
 while (userIsRight == false) {
-        var answer = prompt(user + ", Do you think I have any children?  Enter a number from 0 to 5:");
-        console.log('The user thinks I have ' + answer + ' children'); 
-        if (answer == 1) {
-            alert(user + '. That is right!  I have one child');
-        } else {
-            alert(user + '. That is right!  I have one child');
-        }
+    var answer = prompt(user + ", Do you think I have any pets?    Enter Yes or No (Y or N is OK too):").toUpperCase();
+    if (answer == 'YES' || answer == 'Y') {
+        console.log('The user answered that I have a child.'); 
+        alert(user + '. That is right!  I have one lots of pets');
+        userIsRight = true;
+    } else {
+        console.log('The user answered that I do NOT have any pets. Total Wrong: ' + answersWrong); 
+        alert(user + '. That is not correct!  Sorry, try again.');
+        answersWrong++
+   }
+}
+
+//Question 3:  Puget Sound
+userIsRight = false;
+while (userIsRight == false) {
+    var answer = prompt(user + ", Do you think I live in Puget Sound?    Enter Yes or No (Y or N is OK too):").toUpperCase();
+    if (answer == 'YES' || answer == 'Y') {
+        console.log('The user answered that I live in Puget Sound.'); 
+        alert(user + '. That is right!  \(Yeah, that was not difficult was it?\)');
+        userIsRight = true;
+    } else {
+        console.log('The user answered that I do NOT live in Puget Sound. Total Wrong: ' + answersWrong); 
+        alert(user + '. That is not correct!  Sorry, try again.');
+        answersWrong++
+   }
 }
 
 
-
-    alert(resturantKind + ' food is good eats ' + user + '.');
-
-var resturant = prompt(user + ", what is your favorite " + resturantKind + " resturant?");
-console.log('The user\'s favorite resturant is ' + resturant);
-alert(resturant + ' is a nice place to go for ' + resturantKind + ' food ' + user + '.');
-
-var allergies = prompt(user + ', This is a yes/no question, so please answer with Y or N.  Do you have any allergies that you need to wary of when you go to ' + resturant + ' for ' + resturantKind + ' food?');
-console.log('The user\'s allergy status is ' + allergies);
-
-if (allergies === 'N' || allergies === 'n') {
-    alert ("That's good " + user + ". You should not have any problems going to " + resturant + ' for ' + resturantKind  + ' food then.');
+//Question 4:  Play Outside
+userIsRight = false;
+while (userIsRight == false) {
+    var answer = prompt(user + ", Do you think I like to \‘Play Outside\’ as WDFW says?    Enter Yes or No (Y or N is OK too):").toUpperCase();
+    if (answer == 'YES' || answer == 'Y') {
+        console.log('The user answered that I live in Puget Sound.'); 
+        alert(user + '. That is right!  Hmmm, identifying WDFW probably gave that one away…');
+        userIsRight = true;
+    } else {
+        console.log('The user answered that I do NOT like to play outside.  Total Wrong: ' + answersWrong); 
+        alert(user + '. That is not correct!  Sorry, try again.');
+        answersWrong++
+   }
 }
-else {
-    alert ('Oh Dear ' + user + '.  You better make sure that ' + resturant + ' does not serve anything you are allergic to when you go there for ' + resturantKind + ' food!');
+
+//Question 5:  Fishing
+userIsRight = false;
+while (userIsRight == false) {
+    var answer = prompt(user + ", Do you think I like to go fishing?    Enter Yes or No (Y or N is OK too):").toUpperCase();
+    if (answer == 'YES' || answer == 'Y') {
+        console.log('The user answered that I like to go fishing.'); 
+        alert(user + '. That is right!  Yeah, there’s that WDFW reference again.');
+        userIsRight = true;
+    } else {
+        console.log('The user answered that I do NOT like to play outside.  Total Wrong: ' + answersWrong); 
+        alert(user + '. That is not correct!  Sorry, try again.');
+        answersWrong++
+   }
+}
+
+// Exit dialog.  If we are here, the user got everything right.
+console.log('The user answered wrong: ' + answersWrong); 
+
+alert(user + '. you got them all right!  Code Fellows TAs are so smart!');
+
+if (answersWrong > 0) {
+    alert('Of course, you got ' + answersWrong + ' along the way ' + user + '.');
 }
