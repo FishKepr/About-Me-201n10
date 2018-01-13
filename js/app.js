@@ -1,5 +1,5 @@
 'use strict';
-//  This JavaScript asks a series of questions about me.
+//  This JavaScript asks a series of yes/no questions about me.
 
 var answersWrong = 0;
 
@@ -9,7 +9,7 @@ console.log('The user\'s name is ' + user);
 alert('Hello there ' + user + '. It\'s nice to meet you.');
     
 //Warn the user about the questions
-alert(user + ', let\'s see if you can guess a few things about me.  Is that OK?  If not, too bad. we\'re going to do it anyway.');
+alert(user + ', let\'s see if you can guess a few things about me.  Is that OK?  If not, too bad. We\'re going to do it anyway.');
 
 //Question 1:  Children
 var userIsRight = false;
@@ -31,7 +31,7 @@ userIsRight = false;
 while (userIsRight == false) {
     var answer = prompt(user + ", Do you think I have any pets?    Enter Yes or No \(Y or N is OK too\):").toUpperCase();
     if (answer == 'YES' || answer == 'Y') {
-        console.log('The user answered that I have a child.'); 
+        console.log('The user answered that I have a pet.'); 
         alert(user + ', that is right!  I have lots of pets');
         userIsRight = true;
     } else {
@@ -56,13 +56,12 @@ while (userIsRight == false) {
    }
 }
 
-
 //Question 4:  Play Outside
 userIsRight = false;
 while (userIsRight == false) {
     var answer = prompt(user + ", Do you think I like to \'Play Outside\' as WDFW says?    Enter Yes or No \(Y or N is OK too\):").toUpperCase();
     if (answer == 'YES' || answer == 'Y') {
-        console.log('The user answered that I live in Puget Sound.'); 
+        console.log('The user answered that I like to play outside.'); 
         alert(user + ', that is right!  Hmmm, identifying WDFW probably gave that one away.');
         userIsRight = true;
     } else {
@@ -81,14 +80,14 @@ while (userIsRight == false) {
         alert(user + ', that is right!  Yeah, there\'s that WDFW reference again.');
         userIsRight = true;
     } else {
-        console.log('The user answered that I do NOT like to play outside.  Total Wrong: ' + answersWrong); 
+        console.log('The user answered that I do NOT like to go fishing.  Total Wrong: ' + answersWrong); 
         alert(user + ', that is not correct!  Sorry, try again.');
         answersWrong++
    }
 }
 
 // Exit dialog.  If we are here, the user got everything right.
-console.log('The user answered wrong: ' + answersWrong); 
+console.log('The number of times user answered wrong: ' + answersWrong); 
 
 alert(user + ', you got them all right!  Code Fellows TAs are so smart!');
 
