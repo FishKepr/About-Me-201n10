@@ -5,4 +5,36 @@
 
 h1 {
     color: blue;
+    text-align: center;
+}
+
+h2 {
+    color: purple;
+    background-color: yellow;
+    border-bottom-width: 3px;
+    border-bottom-color: red;
+} 
+
+body {
+    text-align: center;
+    width: 650px;
+    margin: auto;
+}
+
+article {
+    border-color: blue;
+}
+
+#family {
+    border-color: blue;
+}
+
+#spare {
+    text-align: left
+}
+
+ul {
+    list-style-type: circle;
+    width: 200px;
+    text-align: left;
 }
