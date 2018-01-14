@@ -35,6 +35,12 @@ article {
 
 ul {
     list-style-type: circle;
-    width: 200px;
+    width: 300px;
     text-align: left;
 }
+
+ol {
+    width: 300px;
+    text-align: left;
+}
+
