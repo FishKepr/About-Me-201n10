@@ -8,5 +8,5 @@ Lab 02 Project
 <Li>'About Me' HTML/CSS page displaying basic information.</li>
 </ul>
 
-<p>After numerous to get borders to work I eventually gave up.</p>
+<p>After numerous attempts to get borders to work I eventually gave up.</p>
 <p>I was able to get them to work just fine in 101 so I don't understand what I'm doing wrong.
