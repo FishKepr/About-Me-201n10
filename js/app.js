@@ -88,7 +88,11 @@ while (question6right == false && numGuesses < 4) {
         question6right = true;
         answersRight++;
     } else {
-        alert(user + ', that is not correct!  You get four guesses.');
+        if (parseInt(answer) < 4) {
+            alert(user + ', that is too low!  You get four total guesses.');
+        } else {
+            alert(user + ', that is too high!  You get four total guesses.');
+        }
         numGuesses++;
         console.log('The user answered that I do NOT have 4 pets.  Guess Number: ' + numGuesses); 
     }
