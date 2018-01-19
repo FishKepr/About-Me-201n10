@@ -11,3 +11,9 @@ Lab 03 Project
 </ul>
 
 <p>Hardest part was getting the GIT branch set up correctly.</p>
+
+## Version History
+<p>2018-01-18: Pair Programming Exercise</p>
+<p>Driver: David Johnson</p>
+<p>Navigator: Christoper Chew</p>
+<p>Code modified in collaborative effort</p> 
