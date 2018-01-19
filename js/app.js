@@ -104,14 +104,14 @@ if (question6right === false) {
 }
 
 //Question 7:  Movies
-var q7answers = ['zootopia', 'inside out', 'walle', 'wall-e', 'wall•e', 'bolt', 'ratatouille']
+var q7answers = ['Zootopia', 'Inside Out', 'WALL-E', 'WALL•E', 'Bolt', 'Ratatouille']
 numGuesses = 0;
 var question7right = false;
 while (question7right == false && numGuesses < 6) {
     answer = prompt(user + ', Can you guess one of my favorite Disney/Pixar movies?','Hint: One is about a society of animals.').toLowerCase();
     console.log('The user guessed:  ' + answer); 
     for (var i=0; i<q7answers.length; i++) {
-        if (answer == q7answers[i]) {
+        if (answer == q7answers[i].toLowerCase()) {
             question7right = true;
         }
     }
@@ -131,6 +131,7 @@ if (question7right === false) {
     alert(user + ', Sorry! You only get six chances. ','We\'re done.');
     answersWrong++;
 }
+alert(user + ', The possible answers were: '+ q7answers);
 
 // Exit dialog.  ...
 console.log('The number questions user answered right: ' + answersRight); 
