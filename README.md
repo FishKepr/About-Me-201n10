@@ -17,3 +17,5 @@ Lab 03 Project
 <p>Driver: David Johnson</p>
 <p>Navigator: Christoper Chew</p>
 <p>Code modified in collaborative effort</p> 
+<br>
+<p>2018-02-12: Corrected Linter Errors</p>
