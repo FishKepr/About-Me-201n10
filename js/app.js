@@ -95,7 +95,7 @@ function askNonAquaticPets() {
       var answer = prompt(user + ', how many non-aquatic pets do you think I have? (Enter a number):');
     } while (isNaN(answer));
 
-    if (answer === 4) {
+    if (parseInt(answer) === 4) {
       console.log('The user answered that I have four non-aquatic pets.');
       alert(user + ', that is right!  I have 2 cats, 1 dog and 1 angry bird.');
       question6right = true;
